@@ -49,6 +49,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button> <a class="navbar-brand" href="#">Brand</a>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -64,9 +65,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
@@ -104,8 +103,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
         </div>
     </div>
 </div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
