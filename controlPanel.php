@@ -28,19 +28,13 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
     <title>Login Form using jQuery Ajax and PHP MySQL</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="https://code.jquery.com/jquery-3.1.0.min.js">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
 
 </head>
 
 <body>
 
-<div class="container">
-    <div class='alert alert-success'>
-        <button class='close' data-dismiss='alert'>&times;</button>
-        <strong>Hello <?php echo $row['user_name']; ?></strong>,  Welcome to the members page.
-    </div>
-
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-default" role="navigation">
@@ -52,15 +46,18 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                    <!--  Navigation Bar -->
                     <ul class="nav navbar-nav">
-                        <li class="active">
+
+                        <!--           Navigation Bar             -->
+                        <li>
                             <a href="Home.php">Home</a>
                         </li>
-                        <li>
+
+                        <li class="active">
                             <a href="controlPanel.php">Control Panel</a>
                         </li>
+
+                        <!--           D             -->
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">

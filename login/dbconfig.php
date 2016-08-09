@@ -7,9 +7,10 @@
  */
 
   $db_host = "localhost";
-  $db_name = "dbregistration";
-  $db_user = "root";
-  $db_pass = "";
+  $db_user = "sec_user";
+  $db_pass = "12345678**";
+  $db_name = "projectsd";
+
 
   try{
 
@@ -19,4 +20,3 @@
   catch(PDOException $e){
    echo $e->getMessage();
   }
- ?>

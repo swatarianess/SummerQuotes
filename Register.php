@@ -18,9 +18,9 @@
 <body>
 <section class="container Register-form">
     <section>
-        <form method="post" action="" role="register">
-            <img src="assets/images/logo.png" alt="" class="img-responsive" />
-
+        <form method="POST" action="" role="register">
+<!--            <img src="assets/images/logo.png" alt="" class="img-responsive" />-->
+            <h1>Register</h1>
             <div class="form-group">
                 <input type="email" name="email" required class="form-control" placeholder="Enter email or nickname" />
                 <span class="glyphicon glyphicon-user"></span>
@@ -36,9 +36,9 @@
                 <span class="glyphicon glyphicon-repeat"></span>
             </div>
 
-            <button type="submit" name="go" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block" name="btn-register" id="btn-register">Register</button>
 
-            <a href="index.html">I already have an account</a>
+            <a href="login.php">I already have an account</a>
 
 
         </form>

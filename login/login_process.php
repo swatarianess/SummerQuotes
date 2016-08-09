@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'dbconfig.php';
+require_once('dbconfig.php');
 
 if(isset($_POST['btn-login']))
 {
@@ -8,22 +8,21 @@ if(isset($_POST['btn-login']))
     $user_password = trim($_POST['password']);
 
     $password = md5($user_password);
-
     try
     {
 
         $stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_email=:email");
         $stmt->execute(array(":email"=>$user_email));
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);        $count = $stmt->rowCount();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $count = $stmt->rowCount();
 
         if($row['user_password']==$password){
-
-            echo "ok"; // log in
+           // echo "ok"; // log in
             $_SESSION['user_session'] = $row['user_id'];
+            echo('<script> setTimeout(window.location.href = "/home.php",500);</script>');
         }
         else{
-
-            echo "email or password does not exist."; // wrong details
+            echo "404"; // wrong details
         }
 
     }

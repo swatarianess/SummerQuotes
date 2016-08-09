@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['user_session'])){
+	header("Location: /Home.php");
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,27 +25,35 @@
 <body>
 <section class="container login-form">
 	<section>
-		<form method="post" action="login/login.php" role="login">
-			<img src="assets/images/logo.png" alt="" class="img-responsive" />
+
+		<form method="post" action="login/login_process.php" role="login" id="login-form">
+<!--			<img src="assets/images/logo.png" alt="" class="img-responsive" />-->
+			<h1> Login </h1>
+
+			<div id="error">
+				<!-- Error Goes here-->
+			</div>
 
 			<div class="form-group">
-				<input type="email" name="email" required class="form-control" placeholder="Enter email or nickname" />
+				<input type="email" name="user_email" id="user_email" required class="form-control" placeholder="Enter email or nickname" />
 				<span class="glyphicon glyphicon-user"></span>
 			</div>
 
 			<div class="form-group">
-				<input type="password" name="password" required class="form-control" placeholder="Enter password" />
+				<input type="password" name="password" id="password" required class="form-control" placeholder="Enter password" />
 				<span class="glyphicon glyphicon-lock"></span>
 			</div>
 
-			<button type="submit" name="go" class="btn btn-primary btn-block">Login Now</button>
+			<button type="submit" name="btn-login" id="btn-login" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Login Now</button>
 
-			<a href="#">Reset password</a> or <a href="Register.html">create account</a>
+			<a href="#">Reset password</a> or <a href="Register.php">create account</a>
 		</form>
 	</section>
 </section>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="login/script.js"></script>-->
 </body>
 </html>
