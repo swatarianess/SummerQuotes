@@ -9,8 +9,6 @@ $stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
 $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 ?>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,11 +18,19 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="https://code.jquery.com/jquery-3.1.0.min.js">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
-
+<script type="application/javascript">
+    $(document).ready(function() {
+        //Set the carousel options
+        $('#quote-carousel').carousel({
+            pause:'hover',
+            interval: 6000,
+        });
+    });
+</script>
 <div class="container">
     <div class='alert alert-success'>
         <button class='close' data-dismiss='alert'>&times;</button>
@@ -58,13 +64,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">&diams;<?php echo $user->getUserType() ?><strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Option 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Option 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Option 3</a>
+                                    <a href="controlPanel.php">Control Panel</a>
                                 </li>
                                 <li class="divider">
                                 </li>
@@ -77,24 +77,84 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                 </div>
 
             </nav>
+
             <div class="jumbotron">
-                <h2>
-                    Hello, world!
-                </h2>
-                <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                </p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#extraInformation" aria-expanded="true" aria-controls="extraInformation">
-                    Learn more
-                </button>
-                <br>
-                <div class="collapse" id="extraInformation">
-                    <div class="card card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+                <div class='row'>
+                    <div class='col-md-offset-2 col-md-8'>
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner" data-pause="false">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-9 text-center">
+                                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                                <small>username</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+
+                                                <!--                                                <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_2.png" style="width: 100px;height:100px;">-->
+
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                                                <small>username</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+
+                                                <!--                                                <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_3.png" style="width: 100px;height:100px;">-->
+
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                                                <small>username</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
+
+
         </div>
+
+
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
