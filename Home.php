@@ -9,10 +9,10 @@ session_start();
 
 if(!isset($_SESSION['user_session']))
 {
-    header("Location: index.php");
+    header("Location: login.php");
 }
 
-include_once 'dbconfig.php';
+include_once 'login/dbconfig.php';
 
 $stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:uid");
 $stmt->execute(array(":uid"=>$_SESSION['user_session']));
@@ -24,9 +24,9 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Login Form using jQuery Ajax and PHP MySQL</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/styles.css" rel="stylesheet" media="screen">
 
 </head>
 
@@ -40,6 +40,6 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 </div>
 
 </div>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
