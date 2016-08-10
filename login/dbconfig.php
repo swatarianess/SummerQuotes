@@ -25,3 +25,4 @@ session_start();
 
 include_once 'class.user.php';
 $user = new USER($db_con);
+//$quotes = new QUOTE($db_con);     //TODO: Add connection to get quotes

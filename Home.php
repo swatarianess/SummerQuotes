@@ -15,7 +15,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Summer Quotes</title>
+    <title>Summer Quotes - Home</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="https://code.jquery.com/jquery-3.1.0.min.js">
@@ -28,13 +28,14 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 <div class="container">
     <div class='alert alert-success'>
         <button class='close' data-dismiss='alert'>&times;</button>
-        <strong>Hello <?php print($userRow['user_name']) ?></strong>,  Welcome to the members page.
+        <strong>Hello <?php print($userRow['user_name']) ?></strong>,  Welcome to the <?php echo $user->getUserType() ?> page.
     </div>
 
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
+
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -49,15 +50,12 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         <li class="active">
                             <a href="Home.php">Home</a>
                         </li>
-                        <li>
-                            <a href="controlPanel.php">Control Panel</a>
-                        </li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&diams;<?php echo $user->getUserType() ?><strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#">Option 1</a>
@@ -96,7 +94,6 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

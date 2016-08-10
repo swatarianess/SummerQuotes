@@ -5,4 +5,4 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
   `user_password` varchar(255) NOT NULL,
   `joining_date` datetime NOT NULL,
   PRIMARY KEY (`user_id`)
-) 
+)

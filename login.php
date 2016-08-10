@@ -44,8 +44,7 @@ if(isset($_POST['btn-login']))
 <section class="container login-form">
 	<section>
 
-		<form method="post" role="login" id="login-form">
-<!--			<img src="assets/images/logo.png" alt="" class="img-responsive" />-->
+		<form method="post" role="login" id="login-form" novalidate>
 			<h1> Login </h1>
 
 			<div id="error">
@@ -79,7 +78,7 @@ if(isset($_POST['btn-login']))
 </section>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>-->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <!--<script src="login/script.js"></script>-->
 </body>

@@ -20,7 +20,7 @@ if($user->is_loggedin()=="")
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login Form using jQuery Ajax and PHP MySQL</title>
+    <title>Summer Quotes - Control Panel</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">

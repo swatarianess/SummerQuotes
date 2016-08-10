@@ -88,7 +88,9 @@ form[role=register] > button {
 }
 
 
-
+/*
+	CSS for Login form
+*/
 form[role=login] {
 		 font: 14px/2.2em Lato, serif;
 		 color: #aaa;

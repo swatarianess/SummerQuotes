@@ -42,6 +42,8 @@ class USER
                 if(password_verify($upass, $userRow['user_password']))
                 {
                     $_SESSION['user_session'] = $userRow['user_id'];
+                    $_SESSION['user_level'] = $userRow['user_level'];
+                    $_SESSION['alert_count'] = 0;
                     return true;
                 }
                 else
@@ -73,12 +75,6 @@ class USER
         }
     }
 
-    public function getUserLevel(){
-        if($this->is_loggedin()){
-            //TODO: Retrieve userLevel
-        }
-    }
-
     public function redirect($url)
     {
         header("Location: $url");
@@ -89,5 +85,23 @@ class USER
         session_destroy();
         unset($_SESSION['user_session']);
         return true;
+    }
+
+    public function getUserType(){
+        if(isset($_SESSION)) {
+            switch ($_SESSION['user_level']) {
+                case 2:
+                    return 'Elevated';
+                    break;
+                case 3:
+                    return 'Admin';
+                    break;
+                default:
+                    return 'Members';
+                    break;
+            }
+        } else {
+            echo 'error';
+        }
     }
 }
