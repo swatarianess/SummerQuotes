@@ -7,9 +7,10 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/assets/bootstrap/js/bootstrap.min.js" />
-      <root url="file://$PROJECT_DIR$/assets/bootstrap/js/bootstrap.js" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/assets/bootstrap/js/bootstrap.js" />
+    </SOURCES>
   </library>
 </component>
