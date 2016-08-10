@@ -6,6 +6,8 @@
  * Time: 21:44
  */
 
+session_start();
+
   $db_host = "localhost";
   $db_user = "sec_user";
   $db_pass = "12345678**";
@@ -18,5 +20,8 @@
    $db_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   }
   catch(PDOException $e){
-   echo $e->getMessage();
+   die($e->getMessage());
   }
+
+include_once 'class.user.php';
+$user = new USER($db_con);

@@ -1,10 +1,28 @@
 <?php
-session_start();
-if(isset($_SESSION['user_session'])){
-	header("Location: /Home.php");
+require_once 'login/dbconfig.php';
+
+if($user->is_loggedin()!="")
+{
+	$user->redirect('Home.php');
 }
 
+if(isset($_POST['btn-login']))
+{
+	$uname = $_POST['user_email'];
+	$umail = $_POST['user_email'];
+	$upass = $_POST['password'];
+
+	if($user->login($uname,$umail,$upass))
+	{
+		$user->redirect('Home.php');
+	}
+	else
+	{
+		$error = 'Username or password is incorrect';
+	}
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,12 +44,21 @@ if(isset($_SESSION['user_session'])){
 <section class="container login-form">
 	<section>
 
-		<form method="post" action="login/login_process.php" role="login" id="login-form">
+		<form method="post" role="login" id="login-form">
 <!--			<img src="assets/images/logo.png" alt="" class="img-responsive" />-->
 			<h1> Login </h1>
 
 			<div id="error">
-				<!-- Error Goes here-->
+				<?php
+				if(isset($error))
+				{
+					?>
+					<div class="alert alert-danger">
+						<i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?> !
+					</div>
+					<?php
+				}
+				?>
 			</div>
 
 			<div class="form-group">

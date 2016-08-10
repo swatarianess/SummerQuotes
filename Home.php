@@ -1,23 +1,13 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: Steve
- * Date: 08/08/2016
- * Time: 21:48
- */
-session_start();
-
-if(!isset($_SESSION['user_session']))
-{
-    header("Location: login.php");
-}
-
 include_once 'login/dbconfig.php';
-
-$stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:uid");
-$stmt->execute(array(":uid"=>$_SESSION['user_session']));
-$row=$stmt->fetch(PDO::FETCH_ASSOC);
-
+if(!$user->is_loggedin())
+{
+    $user->redirect('login.php');
+}
+$user_id = $_SESSION['user_session'];
+$stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:user_id");
+$stmt->execute(array(":user_id"=>$user_id));
+$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -25,7 +15,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login Form using jQuery Ajax and PHP MySQL</title>
+    <title>Summer Quotes</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="https://code.jquery.com/jquery-3.1.0.min.js">
@@ -38,7 +28,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 <div class="container">
     <div class='alert alert-success'>
         <button class='close' data-dismiss='alert'>&times;</button>
-        <strong>Hello <?php echo $row['user_name']; ?></strong>,  Welcome to the members page.
+        <strong>Hello <?php print($userRow['user_name']) ?></strong>,  Welcome to the members page.
     </div>
 
     <div class="row">
@@ -48,7 +38,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button> <a class="navbar-brand" href="#">Brand</a>
+                    </button> <a class="navbar-brand" href="#">Summer Quotes</a>
 
                 </div>
 
@@ -70,18 +60,18 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Action</a>
+                                    <a href="#">Option 1</a>
                                 </li>
                                 <li>
-                                    <a href="#">Another action</a>
+                                    <a href="#">Option 2</a>
                                 </li>
                                 <li>
-                                    <a href="#">Something else here</a>
+                                    <a href="#">Option 3</a>
                                 </li>
                                 <li class="divider">
                                 </li>
                                 <li>
-                                    <a href="#">Separated link</a>
+                                    <a href="login/logout.php">logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -96,10 +86,17 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                 <p>
                     This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
                 </p>
-                <p>
-                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
-                </p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#extraInformation" aria-expanded="true" aria-controls="extraInformation">
+                    Learn more
+                </button>
+                <br>
+                <div class="collapse" id="extraInformation">
+                    <div class="card card-block">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </div>

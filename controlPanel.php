@@ -5,18 +5,13 @@
  * Date: 08/08/2016
  * Time: 21:48
  */
-session_start();
-
-if(!isset($_SESSION['user_session']))
-{
-    header("Location: login.php");
-}
-
 include_once 'login/dbconfig.php';
 
-$stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:uid");
-$stmt->execute(array(":uid"=>$_SESSION['user_session']));
-$row=$stmt->fetch(PDO::FETCH_ASSOC);
+if($user->is_loggedin()=="")
+{
+    $user->redirect('login.php');
+}
+
 
 ?>
 
@@ -76,15 +71,15 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                             <ul class="dropdown-menu">
 
                                 <li>
-                                    <a href="#">Action</a>
+                                    <a href="#">Option 1</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Another action</a>
+                                    <a href="#">Option 2</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Something else here</a>
+                                    <a href="#">Option 3</a>
                                 </li>
 
                                 <li class="divider">
@@ -92,7 +87,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                                 </li>
 
                                 <li>
-                                    <a href="#">Separated link</a>
+                                    <a href="login/logout.php">logout</a>
                                 </li>
 
                             </ul>
