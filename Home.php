@@ -92,13 +92,13 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             </ol>
 
                             <!-- Carousel Slides / Quotes -->
-                            <div class="carousel-inner" data-pause="false">
+                            <div class="carousel-inner" data-pause="false" align="center">
 
                                 <!-- Quote 1 -->
                                 <div class="item active">
                                     <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-9 text-center">
+                                        <div class="row text-center">
+                                            <div class="col-md-9">
                                                 <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
                                                 <small>username</small>
                                             </div>
@@ -109,10 +109,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                                 <!-- Quote 2 -->
                                 <div class="item">
                                     <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-3 text-center">
-
-                                                <!--                                                <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_2.png" style="width: 100px;height:100px;">-->
+                                        <div class="row text-center">
+                                            <div class="col-sm-3 ">
 
                                             </div>
                                             <div class="col-sm-9">
@@ -126,10 +124,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                                 <!-- Quote 3 -->
                                 <div class="item">
                                     <blockquote>
-                                        <div class="row">
+                                        <div class="row text-center">
                                             <div class="col-sm-3 text-center">
-
-                                                <!--                                                <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_3.png" style="width: 100px;height:100px;">-->
 
                                             </div>
                                             <div class="col-sm-9">

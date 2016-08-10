@@ -152,7 +152,7 @@ section {
 #quote-carousel
 {
 	padding: 0 10px 30px 10px;
-	margin-top: 30px 0px 0px;
+	margin-top: 30 0px 0px;
 }
 
 /* Control buttons  */
@@ -265,7 +265,7 @@ section {
 
 /* Fade transition for carousel items */
 .carousel .item {
-	left: 0 !important;
+	/*left: 0 !important;*/
 	opacity: 0;
 	-webkit-transition: opacity 2s; /*adjust timing here */
 	-moz-transition: opacity 2s;

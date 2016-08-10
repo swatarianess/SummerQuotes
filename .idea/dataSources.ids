@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - projectsd@localhost" uuid="59e312ef-4920-4c9b-9c3a-1e0a1f5a1325">
+    <database-info product="MySQL" version="5.7.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="projectsd">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="projectschool"/>
+      <schema id="6" name="sakila"/>
+      <schema id="7" name="sys"/>
+      <schema id="8" name="world"/>
+      <table id="9" parent="1" name="tbl_users"/>
+      <table id="10" parent="1" name="tbl_quote">
+        <comment>Table full of quotes</comment>
+      </table>
+      <column id="11" parent="9" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="9" name="user_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="13" parent="9" name="user_email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)|0</data-type>
+      </column>
+      <column id="14" parent="9" name="user_password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="15" parent="9" name="joining_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="16" parent="9" name="user_level">
+        <data-type>int(11)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="17" parent="9" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="18" parent="10" name="quoteId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="19" parent="10" name="quoteString">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="20" parent="10" name="quoteAuthor">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="21" parent="10" name="quoteCreationDate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+        <default-expression>CURRENT_TIMESTAMP</default-expression>
+      </column>
+      <index id="22" parent="10" name="tbl_quote_quoteId_uindex">
+        <columns>quoteId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="23" parent="10" name="PRIMARY">
+        <columns>quoteId</columns>
+        <primary>1</primary>
+      </key>
+      <key id="24" parent="10" name="tbl_quote_quoteId_uindex">
+        <columns>quoteId</columns>
+        <underlying-index>tbl_quote_quoteId_uindex</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>

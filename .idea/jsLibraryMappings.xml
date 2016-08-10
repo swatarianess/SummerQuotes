@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/login.php" libraries="{jquery}" />
+    <file url="PROJECT" libraries="{bootstrap.js, html5shiv, jquery, jquery.validate, respond}" />
+  </component>
+</project>
