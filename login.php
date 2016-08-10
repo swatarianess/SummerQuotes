@@ -1,3 +1,25 @@
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: Ultraphatty
+ * Date: 08/08/2016
+ * Time: 21:48
+ */
+session_start();
+
+if(!isset($_SESSION['user_session']))
+{
+	header("Location: index.php");
+}
+
+include_once 'login/dbconfig.php';
+
+$stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:uid");
+$stmt->execute(array(":uid"=>$_SESSION['user_session']));
+$row=$stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +40,14 @@
 <body>
 <section class="container login-form">
 	<section>
-		<form method="post" action="login/login.php" role="login">
-			<img src="assets/images/logo.png" alt="" class="img-responsive" />
 
+		<form method="post" action="login/login.php" role="login">
+<!--			<img src="assets/images/logo.png" alt="" class="img-responsive" />-->
+			<h1> Login </h1>
+
+			<div id="error">
+				<!-- Error Goes here-->
+			</div>
 			<div class="form-group">
 				<input type="email" name="email" required class="form-control" placeholder="Enter email or nickname" />
 				<span class="glyphicon glyphicon-user"></span>
@@ -33,12 +60,13 @@
 
 			<button type="submit" name="go" class="btn btn-primary btn-block">Login Now</button>
 
-			<a href="#">Reset password</a> or <a href="Register.html">create account</a>
+			<a href="#">Reset password</a> or <a href="Register.php">create account</a>
 		</form>
 	</section>
 </section>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="login/script.js"></script>
 </body>
 </html>

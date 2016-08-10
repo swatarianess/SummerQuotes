@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="__ajax.googleapis.com_ajax_libs_jquery_2.1.4_jquery" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/http_oss.maxcdn.com_respond_1.4.2_respond.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-1.4.4.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/js/__ajax.googleapis.com_ajax_libs_jquery_2.1.4_jquery.js" />
+      <root url="file://$PROJECT_DIR$/js/http_ajax.aspnetcdn.com_ajax_jquery.validate_1.15.0_jquery.validate.js" />
+      <root url="file://$PROJECT_DIR$/js/http_ajax.googleapis.com_ajax_libs_jquery_2.1.1_jquery.js" />
+      <root url="file://$PROJECT_DIR$/js/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js" />
+    </SOURCES>
+  </library>
+</component>
