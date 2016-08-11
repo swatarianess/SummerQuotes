@@ -116,7 +116,7 @@ class USER
         /** @var PDOStatement $stmt */
         switch ($this->getUserType()){
             case 2:
-                $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated FROM tbl_quote JOIN tbl_users ON quotePoster = user_name WHERE user_level:= 1 OR tbl_users.user_level = 2");
+                $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated FROM tbl_quote JOIN tbl_users ON quotePoster = user_name WHERE tbl_users.user_level != 3");
                 $stmt->execute(array(':uname'=>$uname));
 
                 break;
@@ -127,17 +127,19 @@ class USER
                 break;
 
             default:
-                $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated, user_level FROM tbl_quote JOIN tbl_users ON quotePoster = user_name WHERE user_name=:uname");
+                $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated FROM tbl_quote JOIN tbl_users ON quotePoster = user_name WHERE user_name=:uname");
                             $stmt->execute(array(':uname'=>$uname));
 
                     break;
-
         }
 
         $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
-
         return json_encode($userRow);
+    }
+
+    public function getUserQuoteCount($uname){
+
     }
 
     public function updateUserQuote($id,$uname,$qAuthor,$qString)

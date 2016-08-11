@@ -20,7 +20,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
     <link href="https://code.jquery.com/jquery-3.1.0.min.js">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="application/javascript"></script>
+    <script src="/assets/jquery/jquery-3.1.0.min.js" type="application/javascript"></script>
+
 </head>
 
 <body>
@@ -99,20 +100,52 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         </a>
                         <button class="button" id="new-quote">New quote</button>
                     </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 </div>
+
+                <script type="application/javascript">
+                    $(document).ready(function() {
+                        var ar = $.parseJSON(<?php echo json_encode($user->getUserQuotes($userRow['user_name'])) ?>); // Json of Quotes by user
+
+                        $('.quote-text').find('#text').text(ar.quoteString); //Edit quote text
+                        $('.quote-author').find('#author').text('~' + ar.quoteAuthor);
+
+                        $("#new-quote").click(function () {
+                            alert("Handler for .click() called.");
+                        });
+
+                        $("#facebook-quote").click(function () {
+                            alert("Share with facebook feature");
+                        });
+
+                        $("#tweet-quote").click(function () {
+                            alert("Share with twitter feature");
+                        });
+
+                        $()
+
+                        $('#Load').on('click',function(){
+                            console.log(ar);
+                            alert("Loaded Quotes..");
+                        });
+
+                    });
+
+                </script>
+
+                <button class="button" id="Load">Load Quote</button>
+
             </div>
 
-            <script type="application/javascript">
-                    var ar = <?php echo json_encode($user->getUserQuotes($userRow['user_name'])) ?>; // Json of Quotes by user
-                    console.log(ar);
-                    $('#quote-box').find('').text('Hi I am replace');
-            </script>
+
 
 
         </div>
     </div>
 </div>
+<script type="application/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
