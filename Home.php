@@ -100,17 +100,18 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         </a>
                         <button class="button" id="new-quote">New quote</button>
                     </div>
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a id="prev_quote" class="left carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a id="next_quote" class="right carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 </div>
 
                 <script type="application/javascript">
+                    var slideCount = 0;
+                    var ar;
                     $(document).ready(function() {
-                        var ar = $.parseJSON(<?php echo json_encode($user->getUserQuotes($userRow['user_name'])) ?>); // Json of Quotes by user
-
-                        $('.quote-text').find('#text').text(ar.quoteString); //Edit quote text
-                        $('.quote-author').find('#author').text('~' + ar.quoteAuthor);
+                        ar = <?php echo(json_encode($user->getUserQuotes($userRow['user_name']))) ?>; // Json of Quotes by user
+                        $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
+                        $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor)
 
                         $("#new-quote").click(function () {
                             alert("Handler for .click() called.");
@@ -124,7 +125,29 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             alert("Share with twitter feature");
                         });
 
-                        $()
+                        $("#next_quote").click(function () {
+                            slideCount++;
+                            slideCount = slideCount % Object.keys(ar).length;
+                            console.log("before: " + slideCount);
+                            $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
+                            $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
+
+
+
+                            console.log(slideCount)
+                        });
+
+                        $("#prev_quote").click(function () {
+                            slideCount--;
+                            if(slideCount < 0){
+                                slideCount = Object.keys(ar).length-1;
+                            }
+                            $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
+                            $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
+
+                            console.log(slideCount)
+
+                        });
 
                         $('#Load').on('click',function(){
                             console.log(ar);
