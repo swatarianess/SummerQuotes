@@ -18,10 +18,9 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
     <title>Summer Quotes - Home</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="https://code.jquery.com/jquery-3.1.0.min.js">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <script src="/assets/jquery/jquery-3.1.0.min.js" type="application/javascript"></script>
 
 </head>
 

@@ -60,11 +60,12 @@ class USER
         }
     }
 
-    public function remove(){
-
+    public function remove($user){
         if(isset($_Session['user_session'])){
-            //Logged in
-            if($_SESSION['user']);
+            if($_SESSION['user']){
+                $stmt = $this->db->prepare("Delete FROM tbl_users where user_name =: uname");
+                $stmt->execute(array(':uname'=>$user));
+            }
         }
         //TODO remove user
     }
