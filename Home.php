@@ -42,7 +42,6 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button> <a class="navbar-brand" href="#">Summer Quotes</a>
-
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -100,7 +99,6 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         </a>
                         <button class="button" id="new-quote">New quote</button>
                         <button class="button" id="delete-quote">Delete quote</button>
-
                     </div>
                     <a id="prev_quote" class="left carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-left"></span></a>
                     <a id="next_quote" class="right carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-right"></span></a>

@@ -21,6 +21,8 @@ if($user->is_loggedin()=="")
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -109,7 +111,6 @@ if($user->is_loggedin()=="")
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
