@@ -1,5 +1,5 @@
 <?php
-require_once 'login/dbconfig.php';
+require_once 'handlers/dbconfig.php';
 
 if($user->is_loggedin()!="")
 {
@@ -41,6 +41,7 @@ if(isset($_POST['btn-login']))
 	<![endif]-->
 </head>
 <body>
+
 <section class="container login-form">
 	<section>
 
@@ -78,8 +79,7 @@ if(isset($_POST['btn-login']))
 </section>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>-->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<!--<script src="login/script.js"></script>-->
+
 </body>
 </html>

@@ -5,16 +5,13 @@
  * Date: 08/08/2016
  * Time: 21:48
  */
-include_once 'login/dbconfig.php';
+include_once 'handlers/dbconfig.php';
 
 if($user->is_loggedin()=="")
 {
     $user->redirect('login.php');
 }
-
-
 ?>
-
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,7 +21,6 @@ if($user->is_loggedin()=="")
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/styles.css" rel="stylesheet" media="screen">
-
 </head>
 
 <body>
@@ -87,7 +83,7 @@ if($user->is_loggedin()=="")
                                 </li>
 
                                 <li>
-                                    <a href="login/logout.php">logout</a>
+                                    <a href="handlers/logout.php">logout</a>
                                 </li>
 
                             </ul>
@@ -101,6 +97,9 @@ if($user->is_loggedin()=="")
             </nav>
 
             <div class="jumbotron">
+                <script type="text/javascript">
+                    var obj = <?php echo json_encode($php_variable); ?>;
+                </script>
 
                 <h2>
                     Hello, world!

@@ -3,110 +3,35 @@
 
 * {
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	outline: none;
 }
+
+.close{
+	-webkit-transition: 2s time;
+	-moz-transition: 2s time;
+	-ms-transition: 2s time;
+	-o-transition: 2s time;
+	transition: 2s time;
+}
+
 body {
 	background: url(../images/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Raleway', sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
 }
-
-.quote-box {
-  border-radius:3px;
-  position:relative;
-  margin:8% auto auto auto;
-  width:450px;
-  padding:40px 50px;
-  display:table;
-  background-color:#fff;
-  
-  
-  
-  
-}
-
-.quote-box .quote-text {
-    
-    text-align:center;
-    width:450px;
-    height:auto;
-    clear:both;
-    font-weight:500;
-    font-size:1.75em;
-  }
-
-  .quote-box .quote-text i{
-      font-size:1.0em;
-      margin-right: 0.4em;
-    }
-
-.quote-box .quote-text  i{
-      font-size:1.0em;
-      margin-right: 0.4em;
-    }
-
-.quote-box .quote-author {
-    width:450px;
-    height:auto;
-    clear:both;
-    padding-top:20px;
-    font-size:1em; 
-    text-align:right;
-  }
-
-  .quote-box .buttons {
-    width:450px;
-    margin:auto;
-    display:block;
-    
-  }
-
-.quote-box .buttons .button {
-      height:38px;
-      border:none;
-      border-radius:3px;
-      color:#fff;
-      background-color:#333;
-      outline:none;
-      font-size:0.85em;
-      padding: 8px 18px 6px 18px;
-      margin-top:30px;
-      opacity:1;
-      cursor:pointer;
-      
-    }
-
-.quote-box .buttons .button:hover{
-	opacity:0.85;
-}    
-
- #tweet-quote, #facebook-quote {
-        float:left;
-        padding:0px;
-        padding-top:8px;
-        text-align:center;
-        font-size:1.2em;
-        margin-right:5px;
-        height:30px;
-        width:40px;
-      }
-      
-  #new-quote {
-        float:right;
-      }       
 
 .login-form {
-		 text-align: center;
-		 margin: 0 auto;
-		 margin-top: 100px;
-		 margin-bottom: 100px;
-		 max-width: 460px;
-	 }
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	max-width: 460px;
+}
 .login-form > section {
 	padding: 35px 35px 25px 35px;
 	border-radius: 5px;
@@ -178,9 +103,9 @@ form[role=register] > button {
 	CSS for Login form
 */
 form[role=login] {
-		 font: 14px/2.2em Lato, serif;
-		 color: #aaa;
-	 }
+	font: 14px/2.2em Lato, serif;
+	color: #aaa;
+}
 
 form[role=login] input,
 form[role=login] > button {
@@ -208,19 +133,18 @@ form[role=login] > button {
 	background: #0c56a9;
 	border: 1px solid #0c4584;
 }
-	
+
 .form-control + .glyphicon {
-    position: absolute;
-    left: 0;
+	position: absolute;
+	left: 0;
 	top: 14%;
-    padding: 8px 0 0 17px;
+	padding: 8px 0 0 17px;
 	font-size: 15px;
 	color: #757575;
 }
 
 h1{
 	color: #cdcdcd;
-<<<<<<< HEAD
 }
 
 
@@ -235,157 +159,88 @@ section {
 	margin-bottom: 30px;
 }
 
-/* carousel */
-#quote-carousel
-{
-	padding: 0 10px 30px 10px;
-	margin-top: 30 0px 0px;
-}
-
-/* Control buttons  */
-#quote-carousel .carousel-control
-{
-	background: none;
-	color: #222;
-	font-size: 2.3em;
-	text-shadow: none;
-	margin-top: 30px;
-}
-/* Previous button  */
-#quote-carousel .carousel-control.left
-{
-	left: -12px;
-}
-/* Next button  */
-#quote-carousel .carousel-control.right
-{
-	right: -12px !important;
-}
-/* Changes the position of the indicators */
-#quote-carousel .carousel-indicators
-{
-	right: 50%;
-	top: auto;
-	bottom: 0px;
-	margin-right: -19px;
-}
-/* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li
-{
-	background: #c0c0c0;
-	-webkit-transition: background 2s; /*adjust timing here */
-	-moz-transition: background 2s;
-	-o-transition: background 2s;
-	transition: background 2s;
-}
-#quote-carousel .carousel-indicators .active
-{
-	background: #333333;
-	-webkit-transition: background 2s; /*adjust timing here */
-	-moz-transition: background 2s;
-	-o-transition: background 2s;
-	transition: background 2s;
-}
-#quote-carousel img
-{
-	width: 250px;
-	height: 100px
-}
-/* End carousel */
-
-.item blockquote {
-	border-left: none;
-	margin: 0;
-}
-
-.item blockquote img {
-	margin-bottom: 10px;
-}
-
-.item blockquote p:before {
-	content: "\f10d";
-	font-family: 'Fontawesome';
-	float: left;
-	margin-right: 10px;
-}
-
-
-
-/**
-  MEDIA QUERIES
-*/
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-	#quote-carousel
-	{
-		margin-bottom: 0;
-		padding: 0 40px 30px 40px;
-		margin-top: 30px;
-	}
-
-}
-
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-
-	/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-
-	#quote-carousel .carousel-indicators {
-		bottom: -20px !important;
-	}
-	#quote-carousel .carousel-indicators li {
-		display: inline-block;
-		margin: 0px 5px;
-		width: 15px;
-		height: 15px;
-	}
-	#quote-carousel .carousel-indicators li.active {
-		margin: 0px 5px;
-		width: 20px;
-		height: 20px;
-	}
-}
-
-
-
-
-/* Fade transition for carousel items */
-.carousel .item {
-	/*left: 0 !important;*/
-	opacity: 0;
-	-webkit-transition: opacity 2s; /*adjust timing here */
-	-moz-transition: opacity 2s;
-	-o-transition: opacity 2s;
-	transition: opacity 2s;
-}
-.carousel-control {
-	background-image: none !important; /* remove background gradients on controls */
-}
-/* Fade controls with items */
-.item.active{
-	opacity: 1;
-}
-
-.next.left,
-.prev.right {
-	opacity: 1;
-	z-index: 10;
-}
-.active.left,
-.active.right {
-	opacity: 0 !important;
-	z-index: 2;
-	-webkit-transition: opacity 2s; /*adjust timing here */
-	-moz-transition: opacity 2s;
-	-o-transition: opacity 2s;
-	transition: opacity 2s;
-}
-
 .jumbotron{
 	color: #42423e;
 	background-color: ghostwhite;
 	/*background-color:none !important;*/
-=======
->>>>>>> refs/remotes/origin/pr/1
+}
+
+.quote-box {
+	border-radius: 3px;
+	position: relative;
+	margin: 2% auto auto auto;
+	width: 450px;
+	padding: 40px 50px;
+	display: table;
+	background-color: #dadada;
+}
+
+.quote-box .quote-text {
+
+	text-align:center;
+	width:450px;
+	height:auto;
+	clear:both;
+	font-weight:500;
+	font-size:1.75em;
+}
+
+.quote-box .quote-text i{
+	font-size:1.0em;
+	margin-right: 0.4em;
+}
+
+.quote-box .quote-text  i{
+	font-size:1.0em;
+	margin-right: 0.4em;
+}
+
+.quote-box .quote-author {
+	width:450px;
+	height:auto;
+	clear:both;
+	padding-top:20px;
+	font-size:1em;
+	text-align:right;
+}
+
+.quote-box .buttons {
+	width:450px;
+	margin:auto;
+	display:block;
+
+}
+
+.quote-box .buttons .button {
+	height:38px;
+	border:none;
+	border-radius:3px;
+	color:#fff;
+	background-color:#333;
+	outline:none;
+	font-size:0.85em;
+	padding: 8px 18px 6px 18px;
+	margin-top:30px;
+	opacity:1;
+	cursor:pointer;
+
+}
+
+.quote-box .buttons .button:hover{
+	opacity:0.85;
+}
+
+#tweet-quote, #facebook-quote {
+	float:left;
+	padding:0px;
+	padding-top:8px;
+	text-align:center;
+	font-size:1.2em;
+	margin-right:5px;
+	height:30px;
+	width:40px;
+}
+
+#new-quote {
+	float:right;
 }

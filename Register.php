@@ -1,5 +1,5 @@
 <?php
-require_once 'login/dbconfig.php';
+require_once 'handlers/dbconfig.php';
 
 if($user->is_loggedin()!="")
 {
