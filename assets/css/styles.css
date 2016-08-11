@@ -244,3 +244,7 @@ section {
 #new-quote {
 	float:right;
 }
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none
+}

@@ -131,9 +131,6 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             console.log("before: " + slideCount);
                             $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
                             $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
-
-
-
                             console.log(slideCount)
                         });
 
