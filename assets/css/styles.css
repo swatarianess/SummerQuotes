@@ -147,6 +147,10 @@ h1{
 	color: #cdcdcd;
 }
 
+.carousel-control{
+	width: 9%;
+}
+
 
 section {
 	padding-top: 100px;
@@ -200,6 +204,7 @@ section {
 	height:auto;
 	clear:both;
 	padding-top:20px;
+	padding-right: 10px;
 	font-size:1em;
 	text-align:right;
 }
@@ -243,6 +248,11 @@ section {
 
 #new-quote {
 	float:right;
+}
+
+#delete-quote {
+	float: right;
+	margin-right: 5px;
 }
 
 .carousel-control.left, .carousel-control.right {

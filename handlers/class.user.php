@@ -126,8 +126,15 @@ class USER
         return ($userRow);
     }
 
-    public function getUserQuoteCount($uname){
-
+    public function deleteQuote($uname,$quote_id){
+        if($this->is_loggedin()){
+            if($this->getUserType() > 1){
+                $stmt = $this->db->prepare("DELETE FROM tbl_quote where id_quote = $quote_id AND quotePoster = $uname");
+                $stmt->execute(array(':uname'=>$uname));
+            } else {
+                printr('failed');
+            }
+        }
     }
 
     public function updateUserQuote($qAuthor,$qString)
@@ -152,4 +159,7 @@ class USER
             }
         }
     }
+
+
 }
+

@@ -5,12 +5,13 @@ if(!$user->is_loggedin())
     $user->redirect('login.php');
 }
 $user_id = $_SESSION['user_session'];
-$stmt = $db_con->prepare("SELECT * FROM tbl_users WHERE user_id=:user_id");
+$stmt = $db_con->prepare("SELECT * FROM tbl_users JOIN tbl_quote ON quotePoster = tbl_users.user_name WHERE user_id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
 $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress CheckValidXmlInScriptTagBody -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -73,21 +74,21 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                 </div>
             </nav>
 
+
             <div class="jumbotron">
                 <div class="quote-box">
                     <div class="quote-text">
                         <i class="fa fa-quote-left"> </i>
 
-
                         <span id="text">
- 			Dreams are not those which come in our sleep, dreams are those which take away our sleep. &nbsp</span>
+ 			</span>
                         <i class="fa fa-quote-right"> </i>
 
                     </div>
 
                     <!--        Quote Author       -->
                     <div class="quote-author">
-                        <span id="author">-A.P.J Abdul Kalam</span>
+                        <span id="author"></span>
                     </div>
 
                     <!--          Buttons          -->
@@ -99,6 +100,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             <i class="fa fa-facebook"></i>
                         </a>
                         <button class="button" id="new-quote">New quote</button>
+                        <button class="button" id="delete-quote">Delete quote</button>
+
                     </div>
                     <a id="prev_quote" class="left carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-left"></span></a>
                     <a id="next_quote" class="right carousel-control" href="#" role="button" ><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -124,14 +127,14 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         $("#tweet-quote").click(function () {
                             alert("Share with twitter feature");
                         });
+                        $("#delete-quote").click(function () {
+                        });
 
                         $("#next_quote").click(function () {
                             slideCount++;
                             slideCount = slideCount % Object.keys(ar).length;
-                            console.log("before: " + slideCount);
                             $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
                             $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
-                            console.log(slideCount)
                         });
 
                         $("#prev_quote").click(function () {
@@ -141,14 +144,10 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                             }
                             $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
                             $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
-
-                            console.log(slideCount)
-
                         });
 
                         $('#Load').on('click',function(){
                             console.log(ar);
-                            alert("Loaded Quotes..");
                         });
 
                     });
@@ -156,10 +155,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                 </script>
 
                 <button class="button" id="Load">Load Quote</button>
-
             </div>
-
-
 
 
         </div>
