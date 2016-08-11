@@ -111,7 +111,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     $(document).ready(function() {
                         ar = <?php echo(json_encode($user->getUserQuotes($userRow['user_name']))) ?>; // Json of Quotes by user
                         $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
-                        $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor)
+                        $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
 
                         $("#new-quote").click(function () {
                             alert("Handler for .click() called.");
@@ -124,7 +124,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         $("#tweet-quote").click(function () {
                             alert("Share with twitter feature");
                         });
-                        $("#delete-quote").click(function () {
+                        $("#delete-quote").click(function (e) {
+                            alert('deleted');
                         });
 
                         $("#next_quote").click(function () {

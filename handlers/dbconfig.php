@@ -13,7 +13,6 @@ session_start();
   $db_pass = "12345678**";
   $db_name = "projectsd";
 
-
   try{
 
    $db_con = new PDO("mysql:hoast={$db_host};dbname={$db_name}",$db_user,$db_pass);

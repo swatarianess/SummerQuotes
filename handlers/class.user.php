@@ -127,15 +127,9 @@ class USER
         return ($userRow);
     }
 
-    public function deleteQuote($uname,$quote_id){
-        if($this->is_loggedin()){
-            if($this->getUserType() > 1){
-                $stmt = $this->db->prepare("DELETE FROM tbl_quote where id_quote = $quote_id AND quotePoster = $uname");
-                $stmt->execute(array(':uname'=>$uname));
-            } else {
-                printr('failed');
-            }
-        }
+    public function deleteQuote($quote_id){
+                $stmt = $this->db->prepare("DELETE FROM tbl_quote where id_quote =:id ");
+                $stmt->execute(array(':id'=>$quote_id));
     }
 
     public function updateUserQuote($qAuthor,$qString)
