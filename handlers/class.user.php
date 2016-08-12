@@ -112,13 +112,13 @@ class USER
         return '';
     }
 
-    public function getUserQuotes($uname){
+    public function getAllUsersQuotes(){
 
         /** @var PDOStatement $stmt */
         switch ($this->getUserType()){
             default:
                 $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated FROM tbl_quote");
-                            $stmt->execute(array(':uname'=>$uname));
+                            $stmt->execute();
                     break;
         }
 
@@ -127,9 +127,19 @@ class USER
         return ($userRow);
     }
 
-    public function deleteQuote($quote_id){
-                $stmt = $this->db->prepare("DELETE FROM tbl_quote where id_quote =:id ");
-                $stmt->execute(array(':id'=>$quote_id));
+    public function getUserQuotes($user){
+
+        /** @var PDOStatement $stmt */
+        switch ($this->getUserType()){
+            default:
+                $stmt = $this->db->prepare("SELECT id_quote, quoteString, quotePoster, quoteAuthor, quoteCreated FROM tbl_quote WHERE quotePoster =:uname");
+                $stmt->execute(array(':uname'=>$user));
+                break;
+        }
+
+        $userRow=$stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return ($userRow);
     }
 
     public function updateUserQuote($qAuthor,$qString)

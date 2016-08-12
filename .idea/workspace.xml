@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cf0ec9-e124-48c0-971c-88e391a299cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/quoteRemove.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Home.php" afterPath="$PROJECT_DIR$/Home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/styles.css" afterPath="$PROJECT_DIR$/assets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controlPanel.php" afterPath="$PROJECT_DIR$/controlPanel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/class.user.php" afterPath="$PROJECT_DIR$/handlers/class.user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/dbconfig.php" afterPath="$PROJECT_DIR$/handlers/dbconfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/quoteCreation.php" afterPath="$PROJECT_DIR$/handlers/quoteCreation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
     </list>
     <ignored path="SummerQuotes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +37,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - projectsd@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -47,20 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class.user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class.user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlers/class.user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="127" column="5" selection-start-line="126" selection-start-column="26" selection-end-line="127" selection-end-column="5" />
+            <state relative-caret-position="15">
+              <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
               <folding>
-                <marker date="1470924790276" expanded="true" signature="339:503" ph="INSERT INTO tbl_users... " />
-                <marker date="1470924790276" expanded="true" signature="957:1032" ph="SELECT * FRO... tbl_users" />
-                <marker date="1470924790276" expanded="true" signature="1922:1968" ph="Delete FROM " />
-                <marker date="1470924790276" expanded="true" signature="3185:3268" ph="SELECT id_qu... tbl_quote" />
-                <marker date="1470924790276" expanded="true" signature="3554:3595" ph="DELETE FROM " />
-                <marker date="1470924790276" expanded="true" signature="3554:3596" ph="DELETE FROM " />
-                <marker date="1470924790276" expanded="true" signature="3940:4025" ph="UPDATE tbl_q... " />
-                <marker date="1470924790276" expanded="true" signature="4083:4143" ph="UPDATE tbl_q... " />
+                <marker date="1470998186960" expanded="true" signature="339:503" ph="INSERT INTO tbl_users... " />
+                <marker date="1470998186960" expanded="true" signature="957:1032" ph="SELECT * FRO... tbl_users" />
+                <marker date="1470998186960" expanded="true" signature="1922:1968" ph="Delete FROM " />
+                <marker date="1470998186960" expanded="true" signature="3183:3266" ph="SELECT id_qu... tbl_quote" />
+                <marker date="1470998186960" expanded="true" signature="3627:3736" ph="SELECT id_qu... tbl_quote" />
+                <marker date="1470998186960" expanded="true" signature="4193:4278" ph="UPDATE tbl_q... " />
+                <marker date="1470998186960" expanded="true" signature="4336:4396" ph="UPDATE tbl_q... " />
               </folding>
             </state>
           </provider>
@@ -76,14 +73,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controlPanel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlPanel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1801">
+              <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+              <folding>
+                <element signature="e#2419#2426#0#HTML" expanded="true" />
+                <marker date="1470999766591" expanded="true" signature="261:359" ph="SELECT * FRO... tbl_users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quoteRemove.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/quoteRemove.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding>
+                <marker date="1470999178069" expanded="true" signature="161:220" ph="DELETE FROM " />
+                <marker date="1470999178069" expanded="true" signature="161:221" ph="DELETE FROM " />
+                <marker date="1470999178069" expanded="true" signature="161:226" ph="DELETE FROM " />
+                <marker date="1470999178069" expanded="true" signature="467:536" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
-                <marker date="1470924984773" expanded="true" signature="172:270" ph="SELECT * FRO... tbl_users" />
+                <marker date="1471001168980" expanded="true" signature="172:270" ph="SELECT * FRO... tbl_users" />
+                <marker date="1471001168980" expanded="true" signature="1294:1378" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="1294:1389" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="1343:1350" ph="×" />
+                <marker date="1471001168980" expanded="true" signature="1672:3320" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="1716:2120" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="1848:2039" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2210:3301" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2304:2460" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2348:2434" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2522:3278" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2569:3252" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2789:3222" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2826:2945" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="2998:3036" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3073:3188" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3398:4836" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3443:3642" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3543:3555" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3745:3822" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="3920:4506" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="4022:4109" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="4223:4311" ph="..." />
+                <marker date="1471001168980" expanded="true" signature="5011:5099" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,19 +205,21 @@
         <option value="&lt;c4dba106-165d-4a78-9a9a-8cab6c635652&gt;/C:\xampp\htdocs\assets\css\styles.css" />
         <option value="dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_users" />
         <option value="$PROJECT_DIR$/quote.html" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/handlers/quoteCreation.php" />
         <option value="/MySQL Fragment (class.user.php:2763).sql" />
         <option value="$PROJECT_DIR$/handlers/quoteUpdate.php" />
         <option value="/JQuery-CSS Fragment (Home.php:4618).css" />
         <option value="dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote" />
-        <option value="$PROJECT_DIR$/assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/controlPanel.php" />
         <option value="$PROJECT_DIR$/projectsd_tbl_quote.sql" />
         <option value="$PROJECT_DIR$/projectsd_tbl_users.sql" />
         <option value="$PROJECT_DIR$/handlers/dbconfig.php" />
-        <option value="$PROJECT_DIR$/handlers/class.user.php" />
         <option value="$PROJECT_DIR$/handlers/deleteQuote.php" />
+        <option value="$PROJECT_DIR$/handlers/quoteCreation.php" />
+        <option value="$PROJECT_DIR$/handlers/class.user.php" />
+        <option value="$PROJECT_DIR$/handlers/quoteRemove.php" />
+        <option value="$PROJECT_DIR$/controlPanel.php" />
+        <option value="$PROJECT_DIR$/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="/HTML Fragment (Home.php:1258).html" />
         <option value="$PROJECT_DIR$/Home.php" />
       </list>
     </option>
@@ -214,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,11 +331,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummerQuotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummerQuotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -808,7 +896,9 @@
       <workItem from="1470909562494" duration="7915000" />
       <workItem from="1470917821386" duration="3124000" />
       <workItem from="1470921119504" duration="113000" />
-      <workItem from="1470921745133" duration="3605000" />
+      <workItem from="1470921745133" duration="3745000" />
+      <workItem from="1470931326160" duration="1811000" />
+      <workItem from="1470996053292" duration="5166000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1470682945482</created>
@@ -901,11 +991,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470922181242</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Code clean-up">
+      <created>1470925383852</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1470925383852</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109980000" />
+    <option name="totallyTimeSpent" value="117097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,24 +1021,24 @@
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32782516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21776815" sideWeight="0.5042644" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.5042644" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22101842" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.219935" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.21776815" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217768" sideWeight="0.49394855" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16471216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108742006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28169015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28060672" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -997,7 +1094,8 @@
     <MESSAGE value="Slide buttons implemented" />
     <MESSAGE value="Fixed permissions" />
     <MESSAGE value="Added password in plaintext :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added password in plaintext :)" />
+    <MESSAGE value="Code clean-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code clean-up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,20 +1108,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da8b5366-f969-41e7-93ed-89755fa1fb19/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -1048,13 +1132,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_Accounts.sql" />
     <entry file="file://$PROJECT_DIR$/login/script.js" />
-    <entry file="file://$PROJECT_DIR$/handlers/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/register_process.php" />
     <entry file="file://$PROJECT_DIR$/js/register_validation.js" />
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/password.php">
@@ -1111,7 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="4" column="104772" selection-start-line="4" selection-start-column="104772" selection-end-line="4" selection-end-column="104772" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,93 +1204,86 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,13 +1302,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handlers/quoteUpdate.php" />
-    <entry file="file://$PROJECT_DIR$/handlers/quoteCreation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/buttonHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1248,27 +1310,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="8288" column="0" selection-start-line="8288" selection-start-column="0" selection-end-line="8288" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,100 +1365,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-926">
           <caret line="7904" column="4" selection-start-line="7904" selection-start-column="4" selection-end-line="7904" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/deleteQuote.php" />
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/deleteQuote.php">
+    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="751" column="0" selection-start-line="751" selection-start-column="0" selection-end-line="751" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/class.user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
+          <folding>
+            <marker date="1470998186960" expanded="true" signature="339:503" ph="INSERT INTO tbl_users... " />
+            <marker date="1470998186960" expanded="true" signature="957:1032" ph="SELECT * FRO... tbl_users" />
+            <marker date="1470998186960" expanded="true" signature="1922:1968" ph="Delete FROM " />
+            <marker date="1470998186960" expanded="true" signature="3183:3266" ph="SELECT id_qu... tbl_quote" />
+            <marker date="1470998186960" expanded="true" signature="3627:3736" ph="SELECT id_qu... tbl_quote" />
+            <marker date="1470998186960" expanded="true" signature="4193:4278" ph="UPDATE tbl_q... " />
+            <marker date="1470998186960" expanded="true" signature="4336:4396" ph="UPDATE tbl_q... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/quoteCreation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1470997405626" expanded="true" signature="198:280" ph="INSERT INTO tbl_quote... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/quoteRemove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1470999178069" expanded="true" signature="161:220" ph="DELETE FROM " />
+            <marker date="1470999178069" expanded="true" signature="161:221" ph="DELETE FROM " />
+            <marker date="1470999178069" expanded="true" signature="161:226" ph="DELETE FROM " />
+            <marker date="1470999178069" expanded="true" signature="467:536" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlPanel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1705">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/31cd0662/59e312ef-4920-4c9b-9c3a-1e0a1f5a1325/projectsd.tbl_quote">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2026">
-          <caret line="110" column="27" selection-start-line="109" selection-start-column="23" selection-end-line="110" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="1801">
+          <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
           <folding>
-            <marker date="1470924984773" expanded="true" signature="172:270" ph="SELECT * FRO... tbl_users" />
+            <element signature="e#2419#2426#0#HTML" expanded="true" />
+            <marker date="1470999766591" expanded="true" signature="261:359" ph="SELECT * FRO... tbl_users" />
           </folding>
         </state>
       </provider>
@@ -1413,19 +1499,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/class.user.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="127" column="5" selection-start-line="126" selection-start-column="26" selection-end-line="127" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
-            <marker date="1470924790276" expanded="true" signature="339:503" ph="INSERT INTO tbl_users... " />
-            <marker date="1470924790276" expanded="true" signature="957:1032" ph="SELECT * FRO... tbl_users" />
-            <marker date="1470924790276" expanded="true" signature="1922:1968" ph="Delete FROM " />
-            <marker date="1470924790276" expanded="true" signature="3185:3268" ph="SELECT id_qu... tbl_quote" />
-            <marker date="1470924790276" expanded="true" signature="3554:3595" ph="DELETE FROM " />
-            <marker date="1470924790276" expanded="true" signature="3554:3596" ph="DELETE FROM " />
-            <marker date="1470924790276" expanded="true" signature="3940:4025" ph="UPDATE tbl_q... " />
-            <marker date="1470924790276" expanded="true" signature="4083:4143" ph="UPDATE tbl_q... " />
+            <marker date="1471001168980" expanded="true" signature="172:270" ph="SELECT * FRO... tbl_users" />
+            <marker date="1471001168980" expanded="true" signature="1294:1378" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="1294:1389" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="1343:1350" ph="×" />
+            <marker date="1471001168980" expanded="true" signature="1672:3320" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="1716:2120" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="1848:2039" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2210:3301" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2304:2460" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2348:2434" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2522:3278" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2569:3252" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2789:3222" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2826:2945" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="2998:3036" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3073:3188" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3398:4836" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3443:3642" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3543:3555" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3745:3822" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="3920:4506" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="4022:4109" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="4223:4311" ph="..." />
+            <marker date="1471001168980" expanded="true" signature="5011:5099" ph="{...}" />
           </folding>
         </state>
       </provider>

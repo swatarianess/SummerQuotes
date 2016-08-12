@@ -28,12 +28,10 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
 <div class="container">
 
-    <div class='alert alert-success in'>
-        <button class='close' data-dismiss='alert'>&times;</button>
-        <strong>Hello <?php print($userRow['user_name']) ?></strong>, Welcome to
-        the <?php echo $user->getUserType() ?> page.
-    </div>
-
+    <?php if($_SESSION['views'] < 1){print ("<div class='alert alert-success in'>  
+  <button class='close' data-dismiss='alert'>&times;</button>
+    <strong>Hello  "); print($userRow['user_name']);echo ("</strong>, Welcome to
+        the ");echo ($user->getUserType()); echo("page.</div>");} $_SESSION['views'] = $_SESSION['views']+1; ?>
 
     <div class="row">
         <div class="col-md-12">
@@ -41,7 +39,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button> <a class="navbar-brand" href="#">Summer Quotes</a>
+                    </button> <a class="navbar-brand" href="Home.php">Summer Quotes</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,7 +107,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     var slideCount = 0;
                     var ar;
                     $(document).ready(function() {
-                        ar = <?php echo(json_encode($user->getUserQuotes($userRow['user_name']))) ?>; // Json of Quotes by user
+                        ar = <?php echo(json_encode($user->getAllUsersQuotes($userRow['user_name']))) ?>; // Json of Quotes by user
                         $('.quote-text').find('#text').text(ar[slideCount].quoteString); //Edit quote text
                         $('.quote-author').find('#author').text('~' + ar[slideCount].quoteAuthor);
 
@@ -152,7 +150,6 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
                 </script>
 
-                <button class="button" id="Load">Load Quote</button>
             </div>
 
 

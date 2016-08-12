@@ -11,6 +11,7 @@ if(isset($_POST['btn-login']))
 	$uname = $_POST['user_email'];
 	$umail = $_POST['user_email'];
 	$upass = $_POST['password'];
+	$_SESSION['views'] = 0;
 
 	if($user->login($uname,$umail,$upass))
 	{
