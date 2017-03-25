@@ -80,7 +80,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
 
                         <span id="text">
- 			Dreams are not those which come in our sleep, dreams are those which take away our sleep. &nbsp</span>
+ 			I need your help in running this project in XAMPP &nbsp</span>
                         <i class="fa fa-quote-right"> </i>
 
                     </div>
